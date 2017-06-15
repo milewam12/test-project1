@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Eat & Burn - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">-->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <link href="css/nutritionLabel.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+</head>
+
+<body>
+
+
+  <nav class="black" role="navigation">
+    <div class="row">
+      <div class="col l4 s8">
+        <div class="nav-wrapper container">
+
+          <a id="logo-container" href="#" class="brand-logo">EAT <img src="images/and.png" class="and"> BURN</a>
+        </div>
+      </div>
+      <div class="col l8 s4">
+         <ul id="nav-mobile" class="right">
+        <li>
+          <a  id="btnLogout" class="hide">Log out</a></li>
+          </ul>
+        <div class="card-panel red" style="padding-bottom: 39px;">
+         
+
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- form-->
+  <div id=userAuth style="padding-top: 40px;">
+  <div class="container" id="validation">
+
+    <div class="row">
+      <form class="col s12">
+        <!--<div class="row">
+          <div class="input-field col s12">
+            <input placeholder="Placeholder" id="first_name" type="text">
+            <label for="first_name">Name</label>
+          </div>
+
+        </div>-->
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="txtEmail" type="email">
+            <label for="email">Email</label>
+          </div>
+        </div>
+
+             <div class="row">
+          <div class="input-field col s12">
+            <input id="txtPassword" type="password">
+            <label for="password">Password</label>
+          </div>
+        </div>
+
+        <a id="btnLogin" class="btn-large waves-effect waves-light teal lighten-1  ">Log in</a>
+
+            <a id="btnSignup" class="btn-large waves-effect waves-light grey lighten-1  ">Sing up</a>
+      </form>
+    </div>
+
+  </div>
+  </div>
+
+  <!--- form ends-->
+<div id="app">
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">YOUR FOOD</h1>
+
+        <div class="row center">
+          <div class="input-field col s12 ">
+            <input id="user-input" type="text" class="validate" placeholder="Enter here">
+
+          </div>
+
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1  ">Search</a>
+        </div>
+
+        <div class="row center">
+          <h5 class="header col s12 light">How many calories are you about to intake?</h5>
+          <p class="header col s12 light">Get advice and a full workout to help you stay on track and fit.</p>
+        </div>
+
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <!--   Calories and video Section   -->
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card-panel red" style="padding-bottom: 400px;padding-left: 0px;padding-right: 0px;">
+        <div class="food-content">
+          <h4 id="user-input-display"> Yummy Food </h4>
+
+          <div class="col s12 ">
+            <div class="card-panel black">
+              <div class="calories-content">
+                <span id="display-calories"> 0000 </span>
+                <h3>Calories</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 ">
+            <div class="card-panel red">
+              <div class="more-content">
+                <h4>Nutrition Facts</h4>
+                <span id="itemName"> 0000 </span><br>
+                <span id="serv"> abc </span><br>
+                <span id="fat"> def </span><br>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="col s12 m6">
+      <div class="card-panel lighten-5" style="padding-bottom: 400px;">
+        <div class="food-content">
+          <h4>Burn the calories</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="red-text">Your Meal </h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support
+            and continue development on this project and is greatly appreciated.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="card-panel red"> </div>
+
+  <div id="test1"></div>
+</div>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/nutritionLabel-min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+  <script src="js/logic.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
